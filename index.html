@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shrushh Valentine Card</title>
+</head>
+<body>
+    <<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valentine?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+    <div class="emoji">🐱❤️</div>
+    <h2>chiuuu, will you be my Valentine?</h2>
+
+    <div class="buttons">
+        <button class="yes" onclick="yesClicked()">Yes</button>
+        <button class="no" onmouseover="moveButton()">No</button>
+    </div>
+
+    <p id="text">"No" seems a bit shy 😏</p>
+</div>
+
+<script>
+function moveButton() {
+    const noBtn = document.querySelector('.no');
+    noBtn.style.position = "absolute";
+    noBtn.style.top = Math.random() * 80 + "vh";
+    noBtn.style.left = Math.random() * 80 + "vw";
+}
+
+function yesClicked() {
+    document.body.innerHTML = "<h1 style='text-align:center;margin-top:40vh;'>💖 Yayyy! 💖</h1>";
+}
+</script>
+
+</body>
+</html>>
+</body>
+</html>
